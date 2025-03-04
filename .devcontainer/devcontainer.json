@@ -6,7 +6,6 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "postStartCommand": "echo 'postStart'; echo 'npm run dev'",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -26,7 +25,17 @@
       "settings": {}
     }
   },
+  "containerEnv": {
+    // Use this to help with orientation
+    "DEVCONTAINER":"true",
+    // Use this to enable polling when Docker is used
+    "CHOKIDAR_USEPOLLING": "true",
+    // This is also used for Hot Module + Reloading with Gatsby
+    "INTERNAL_STATUS_PORT":"5001"
+  },
+  "runArgs": ["--name","DEV_caiwa-search-ui"],
   // 起動時の実行コマンド
   // 今回はnodejsのパッケージをインストール
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm run dev"
 }
