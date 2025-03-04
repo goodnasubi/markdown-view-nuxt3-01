@@ -14,6 +14,18 @@ Nuxt3 markdown to html view from LLM responce.
 3. vscode が開いたら、右下に、通知されるので、「コンテナーで再度開く」ボタンを押してください。
    ![右下の通知：「コンテナーで再度開く」を押下する](./md_open_devcontainer.png)
 4. しばらく待ちます。
+5. LLMは、OpenAI に接続しますので、ご自身のAPIキーを設定してください。
+    1. .env.example ファイルをコピーして、.env を作成
+        ```bash
+        cp .env.example .env
+        ```
+    2. .envファイルを開き、APIキーを設定
+
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxx を、ご自身のAPIキーに変更してください。
+        ```bash
+        OPENAI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        ```
+
 5. 開発モードで、node サーバーを起動
     ```bash
     npm run dev
