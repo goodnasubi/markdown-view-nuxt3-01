@@ -43,7 +43,7 @@
             }">
               {{ message.role === 'user' ? '私: ' : 'AI: ' }}
               <div>--- オリジナルのレスポンス: --------<br />
-                <AssistantMessageOriginalView :content="message.content" />
+                <AssistantMessageOriginalView :content="message.content" :disabled="true" />
                 <br />--- markdown変換後: --------</div>
               <AssistantMessage :content="message.content" class="px-1" />
             </v-card>
@@ -53,7 +53,7 @@
             >
             <v-textarea v-model="input"
               clearable auto-grow counter variant="solo"
-              label="メッセージを送信"
+              label="メッセージを送信 (shift + enter)"
               bg-color="red"
               rows="1"
               @keydown.enter.shift="handleSubmit"

@@ -2,6 +2,7 @@
 
 const props = defineProps<{
   content: string
+  disabled: { type: boolean, default: false}
 }>()
 
 const lines = ref<string[]>([])
@@ -11,7 +12,7 @@ watch(() => props.content, () => {
 </script>
 
 <template>
-    <div v-if="lines.length > 0">
+    <div v-if="!disabled && lines.length > 0">
         <div v-for="line in lines">{{ line }}</div>
     </div>
 </template>
