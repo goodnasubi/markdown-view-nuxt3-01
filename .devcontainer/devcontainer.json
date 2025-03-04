@@ -1,21 +1,32 @@
 {
-    "postStartCommand": "echo 'postStart'; npm run dev",
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "Vue.volar",
-          "DavidAnson.vscode-markdownlint",
-          "donjayamanne.githistory",
-          "esbenp.prettier-vscode",
-          "dbaeumer.vscode-eslint",
-          "editorconfig.editorconfig",
-          "vitest.explorer",
-          "ms-azuretools.vscode-docker",
-          "mechatroner.rainbow-csv",
-          "PKief.material-icon-theme",
-          "mhutchie.git-graph",
-          "christian-kohler.npm-intellisense"
-        ]
-      }
+  "name": "caiwa-search-ui",
+  // dockerイメージ
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  // nodeやpythonなどのインストール設定
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postStartCommand": "echo 'postStart'; echo 'npm run dev'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar",
+        "DavidAnson.vscode-markdownlint",
+        "donjayamanne.githistory",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
+        "vitest.explorer",
+        "ms-azuretools.vscode-docker",
+        "mechatroner.rainbow-csv",
+        "PKief.material-icon-theme",
+        "mhutchie.git-graph",
+        "christian-kohler.npm-intellisense"
+      ],
+      "settings": {}
     }
-  }
+  },
+  // 起動時の実行コマンド
+  // 今回はnodejsのパッケージをインストール
+  "postCreateCommand": "npm install"
+}
