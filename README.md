@@ -14,6 +14,14 @@ Nuxt3 markdown to html view from LLM responce.
 3. vscode が開いたら、右下に、通知されるので、「コンテナーで再度開く」ボタンを押してください。
    ![右下の通知：「コンテナーで再度開く」を押下する](./md_open_devcontainer.png)
 4. しばらく待ちます。
+5. 開発モードで、node サーバーを起動
+    ```bash
+    npm run dev
+    ```
+6. ブラウザで開く
+    ```
+    http://localhost:3000
+    ```
 
 ## 参考にしたHP
 - Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
