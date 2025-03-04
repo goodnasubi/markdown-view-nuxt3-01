@@ -3,6 +3,18 @@ Nuxt3 markdown to html view from LLM responce.
 
 - Nuxt Minimal Starter
 
+## 開発コンテナで起動する方法
+
+1. コマンドラインで、このリポジトリを、git clone
+2. クローンした markdown-view-nuxt3-01 フォルダに移動して、vscode で起動します。
+   ```bash
+   cd markdown-view-nuxt3-01
+   code .
+   ```
+3. vscode が開いたら、右下に、通知されるので、「コンテナーで再度開く」ボタンを押してください。
+   [](md_open_devcontainer.png)
+4. しばらく待ちます。
+
 ## 参考にしたHP
 - Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 - [フロントエンド開発にNuxt３を使おう #初心者 - Qiita](https://qiita.com/KoutaKawaguchi1101/items/e2d138403544e545c177)
