@@ -12,7 +12,7 @@ Nuxt3 markdown to html view from LLM responce.
    code .
    ```
 3. vscode が開いたら、右下に、通知されるので、「コンテナーで再度開く」ボタンを押してください。
-   [](md_open_devcontainer.png)
+   ![右下の通知：「コンテナーで再度開く」を押下する](./md_open_devcontainer.png)
 4. しばらく待ちます。
 
 ## 参考にしたHP
